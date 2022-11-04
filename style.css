@@ -1,0 +1,109 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(38, 35, 35);
+    color:white-space;
+}
+
+#header{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/gold.png);
+    background-size: cover;
+    padding-right: 30rem;
+    padding-bottom: 80rem;
+
+}
+
+.container{
+    padding: 1rem 2rem;
+}
+
+nav{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 300px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 4rem;
+}
+
+nav ul li a{
+    color: rgb(255, 248, 248);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 0.3rem;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    color: rgb(255, 255, 255);
+    margin-top:2rem;
+}
+
+.header-text h1{
+    font-size: 6rem;
+}
+
+.takase-office{
+    color: red;
+}
+
+/* -------about------- */
+#about{
+    padding: 10rem 10rem;
+    color:rgb(255, 255, 255)
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    margin-top: 0px;
+}
